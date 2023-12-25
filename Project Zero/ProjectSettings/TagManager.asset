@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - StartingPoint
+  - Enemy
+  - PlayerAttacks
+  - EnemyAttacks
+  - Boss
+  - BossAttacks
+  - Joint
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 409326459
+    locked: 0
+  - name: Player
+    uniqueID: 390226249
+    locked: 0
+  - name: Enemy
+    uniqueID: 1886693017
+    locked: 0
+  - name: Shoots
+    uniqueID: 591301491
+    locked: 0

@@ -1,0 +1,822 @@
+fileFormatVersion: 2
+guid: 4abeac4e8b6e1bd48aef3c692baa78ca
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_0
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 7
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded2ef65d4cc5834cbd68fa36cc1a7e0
+      internalID: -944551570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_1
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 8
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c020060268bf60c4f89197b8e6a20b0f
+      internalID: -550341929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_2
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 9
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98e81c2c197dfb439ff331bb7eacf30
+      internalID: -1274045386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_3
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 6
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c21fe118549fb45ac70bb407e75f97
+      internalID: -26700649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_4
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 5
+        width: 50
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c27787dee7b99458705a577a480dca
+      internalID: 314458682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_5
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 29
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce750bc5aa6ae14d9411a4eace66d77
+      internalID: -1067599051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_6
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 6
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84777c619ba85a478ba76cd5b5a0681
+      internalID: 40028902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_7
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 5
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aeee531f830a214fac9b98e182ff385
+      internalID: 1364967643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_8
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 4
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda936683609c5b48bced393cc04bcdf
+      internalID: -162081426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 12
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62675432e9ff6984abc5ba33c7d2add1
+      internalID: -77250818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_10
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 9
+        width: 38
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a189f862b8fa5449c571e0736c939e
+      internalID: -473884458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_11
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 10
+        width: 71
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08376418bb0f858448c2c4c63b752c2c
+      internalID: -1014105460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_12
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 11
+        width: 43
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b027b8f026cfc4babfb730ff544212
+      internalID: -1283704485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_13
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 11
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88dc7fe6c464dc4a846e64255a906ad
+      internalID: -2134145434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_14
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 9
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10928c8ff03a154f965500af76c8b69
+      internalID: -1471844616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_15
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 25
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42f87efd728e07488ce39b434fd37db
+      internalID: -1624865604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_16
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 10
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0762a15411639854a8017477649c794b
+      internalID: -648368323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_17
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 25
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de6e3067e6ae5f499b3d963da24157f
+      internalID: 663626141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 16
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea2e27fc5250fd409a0faf01121492e
+      internalID: -1123180035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_19
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 16
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc2dd3d213b55741889f29d01731013
+      internalID: -559255696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_20
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d02141c8e8bfb4786ec33111b014fb
+      internalID: -1194064031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_21
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 14
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0840ad738cfde6e41b1f9c96c9cd2004
+      internalID: -1524920487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_22
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 15
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae387c4ae51b14499e2d815988a9233
+      internalID: -1478745960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_23
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 15
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d8694d70cddb740b984053b5aef089
+      internalID: 1329529154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_24
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 16
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18cfb2773314114e9c72596c1221863
+      internalID: 869900571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_25
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 15
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a72be8954f8c345a4c6f75b583ec21
+      internalID: -1190880585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_26
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 14
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c2d6382f4b09b468462654f96dbab8
+      internalID: -619563927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_27
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 12
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4384df7858048df478ab45f37a5f45e5
+      internalID: 1600581893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_28
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 14
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f5e77703ef0d64dbd4f1f0b41210e7
+      internalID: -1428059423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_29
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 17
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03e25ee856cbe44e929bffe23c13f57
+      internalID: 1057920302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Mega Man X - Weapons and Items 2 - Copia_30
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 9
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8170bbe7e2a5f6c4985cc78dbdf7009b
+      internalID: 146823408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SNES - Mega Man X - Weapons and Items 2 - Copia_0: -944551570
+      SNES - Mega Man X - Weapons and Items 2 - Copia_1: -550341929
+      SNES - Mega Man X - Weapons and Items 2 - Copia_10: -473884458
+      SNES - Mega Man X - Weapons and Items 2 - Copia_11: -1014105460
+      SNES - Mega Man X - Weapons and Items 2 - Copia_12: -1283704485
+      SNES - Mega Man X - Weapons and Items 2 - Copia_13: -2134145434
+      SNES - Mega Man X - Weapons and Items 2 - Copia_14: -1471844616
+      SNES - Mega Man X - Weapons and Items 2 - Copia_15: -1624865604
+      SNES - Mega Man X - Weapons and Items 2 - Copia_16: -648368323
+      SNES - Mega Man X - Weapons and Items 2 - Copia_17: 663626141
+      SNES - Mega Man X - Weapons and Items 2 - Copia_18: -1123180035
+      SNES - Mega Man X - Weapons and Items 2 - Copia_19: -559255696
+      SNES - Mega Man X - Weapons and Items 2 - Copia_2: -1274045386
+      SNES - Mega Man X - Weapons and Items 2 - Copia_20: -1194064031
+      SNES - Mega Man X - Weapons and Items 2 - Copia_21: -1524920487
+      SNES - Mega Man X - Weapons and Items 2 - Copia_22: -1478745960
+      SNES - Mega Man X - Weapons and Items 2 - Copia_23: 1329529154
+      SNES - Mega Man X - Weapons and Items 2 - Copia_24: 869900571
+      SNES - Mega Man X - Weapons and Items 2 - Copia_25: -1190880585
+      SNES - Mega Man X - Weapons and Items 2 - Copia_26: -619563927
+      SNES - Mega Man X - Weapons and Items 2 - Copia_27: 1600581893
+      SNES - Mega Man X - Weapons and Items 2 - Copia_28: -1428059423
+      SNES - Mega Man X - Weapons and Items 2 - Copia_29: 1057920302
+      SNES - Mega Man X - Weapons and Items 2 - Copia_3: -26700649
+      SNES - Mega Man X - Weapons and Items 2 - Copia_30: 146823408
+      SNES - Mega Man X - Weapons and Items 2 - Copia_4: 314458682
+      SNES - Mega Man X - Weapons and Items 2 - Copia_5: -1067599051
+      SNES - Mega Man X - Weapons and Items 2 - Copia_6: 40028902
+      SNES - Mega Man X - Weapons and Items 2 - Copia_7: 1364967643
+      SNES - Mega Man X - Weapons and Items 2 - Copia_8: -162081426
+      SNES - Mega Man X - Weapons and Items 2 - Copia_9: -77250818
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

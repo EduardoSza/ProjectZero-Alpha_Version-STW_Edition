@@ -1,17 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovements : MonoBehaviour
 {
-    // Variável que armazena um script do tipo "PlayerAttributes":
+    // Esta variável contêm o script que controla os atributos principais e o sistema de vida/morte do player:
     [SerializeField]
-    private PlayerAttributes player;
+    private PlayerAttributes playerAttributes;
 
+    // A bool startFlag é responsável por detectar se o jogador alcançou o Starting Point, 
+    // significando que o jogo já começou e/ou que agora você pode movimentar o personagem:
     [SerializeField]
     private bool startFlag = false;
 
-    public bool StartFlag { 
+    // Get e Set para encapsulamento da variável "startFlag":
+    public bool StartFlag {
         get 
         { 
             return startFlag; 
@@ -25,10 +29,11 @@ public class PlayerMovements : MonoBehaviour
 
     void Update()
     {
+        // Enquanto o Starting Point não é encontrado, a nave moverá infinitamente para a direita:
         if(startFlag == false)
         {
             Vector2 position = this.transform.position;
-            position.x += player.Speed * Time.deltaTime;
+            position.x += playerAttributes.Speed * Time.deltaTime;
             this.transform.position = position;
         }
         else
@@ -38,21 +43,23 @@ public class PlayerMovements : MonoBehaviour
         }
     }
 
+    // Permite as movimentaçções para cima e para baixo:
     private void AllowVerticalMovement()
     {
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector2 position = this.transform.position;
-        position.y += moveVertical * player.Speed * Time.deltaTime;
+        position.y += moveVertical * playerAttributes.Speed * Time.deltaTime;
         this.transform.position = position;
     }
 
+    // Permite as movimentaçções para esquerda e para direita:
     private void AllowHorizontalMovement()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
 
         Vector2 position = this.transform.position;
-        position.x += moveHorizontal * player.Speed * Time.deltaTime;
+        position.x += moveHorizontal * playerAttributes.Speed * Time.deltaTime;
         this.transform.position = position;
     }
 }

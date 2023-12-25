@@ -7,9 +7,10 @@ public class LaserAttack_Control : MonoBehaviour
     [SerializeField]
     private float timeOfDeath;
 
-    // Update is called once per frame
+   
     void Update()
     {
+        // Faz com que o laser seja destruído depois de um certo tempo:
         Destroy(gameObject, timeOfDeath);
     }
 }

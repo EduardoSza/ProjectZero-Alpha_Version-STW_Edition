@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1359d011d2e9dec409e6cb5c8386f69b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 1879721573086124037}
   amplitude: 1
   frequency: 1
   inverseFlow: 0
@@ -69,7 +70,7 @@ MonoBehaviour:
   attackPower: 1
   speed: 3.3
   anim: {fileID: 7229236576516990661}
-  boxCollider: {fileID: 484033938566143491}
+  enemyCollider: {fileID: 484033938566143491}
 --- !u!114 &565167697006650709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,7 +144,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04392436, y: -0.15302026}
+  m_Offset: {x: 0.053489685, y: -0.19264808}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -154,7 +155,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.92138225, y: 0.7881168}
+  m_Size: {x: 0.7328086, y: 0.725259}
   m_EdgeRadius: 0
 --- !u!1 &8691024568366466596
 GameObject:

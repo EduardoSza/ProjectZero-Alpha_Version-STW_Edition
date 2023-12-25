@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class CameraMoves : MonoBehaviour
 {
-    [SerializeField]
-    private float speed;
+    // Esta variável contêm o script que permite ao player se movimentar:
     [SerializeField]
     private PlayerMovements player;
+    
+    [SerializeField]
+    private float speed;
 
-    // Update is called once per frame
     void Update()
     {
+        // Quando o player alcançar o Starting Point, a câmera com o script CameraMoves começará a se movimentar:
         if (player.StartFlag == true)
         {
-            horizontalMoviment();
+            HorizontalMoviment();
         }
     }
 
-    private void horizontalMoviment()
+    // Faz com que o game object se movimente para a direita:
+    private void HorizontalMoviment()
     {
         Vector3 position = this.transform.position;
         position.x += speed * Time.deltaTime;

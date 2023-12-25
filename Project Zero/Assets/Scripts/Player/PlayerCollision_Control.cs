@@ -5,8 +5,10 @@ using UnityEngine;
 // Esse script controla a
 public class PlayerCollision_Control : MonoBehaviour
 {
+    // Esta variável contêm o script que permite ao player se movimentar:
     [SerializeField]
     private PlayerMovements playerMovements;
+    // Esta variável contêm o script que controla os atributos principais e o sistema de vida/morte do player:
     [SerializeField]
     private PlayerAttributes playerAttributes;
 
@@ -19,33 +21,39 @@ public class PlayerCollision_Control : MonoBehaviour
     [SerializeField]
     private Animator anim;
 
+    // Esta variável armazena o som de dano quando o personagem é atingido:
     [SerializeField]
     private AudioSource damageSound;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Quando o jogador passar pela linha de partida "Starting Point", só então poderá controlar o personagem:
+        // Starting Point é um game object vazio, dotado de apenas um collisor em trigger.
+        // Quando o jogador passar pela linha de partida "Starting Point", só então o personagem poderá ser controlado:
         if (collision.gameObject.CompareTag("StartingPoint"))
         {
             playerMovements.StartFlag = true;
         }
 
         // Se o jogador encostar em um inimigo ou em uma tiro do inimigo, perderá vidas de acordo com o poder do inimigo.
+        // Abaixo estão os ifs responsáveis por tudo isso:
 
-        // Se for um inimigo comum, ele só tira 1 de dano.
+        //  - Se for um inimigo comum, ele tira só 1 de dano:
         if ((collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("EnemyAttacks")) && anim.GetBool("doBarrelRoll") == false)
         {
             playerAttributes.LifePoints--;
             StartCoroutine(Flickering());
         }
 
-        // Se o inimigo for um boss, o jogador morre na hora.
+        //  - Porém e o inimigo for um boss, o jogador morre na hora.:
         if (collision.gameObject.CompareTag("Boss") || collision.gameObject.CompareTag("BossAttacks"))
         {
             playerAttributes.LifePoints = 0;
         }
     }
 
+    // O IEnumerator permite que ações acontecem apenas depois de um determinado período de tempo.
+    // Neste caso, Flickering significa "piscar" e representa o momento quando um player leva dano inimigo,
+    // desativando por momentos o sprite do personagem e o seu colisor.
     IEnumerator Flickering()
     {
         boxCollider.enabled = false;

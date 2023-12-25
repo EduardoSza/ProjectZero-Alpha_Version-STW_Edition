@@ -10,6 +10,8 @@ public class SimpleShot_Control : MonoBehaviour
     [SerializeField]
     private float timeOfDeath;
 
+    // Esta variável é essencial, pois carrega consigo o poder de ataque do player, recolhido anteriomente
+    // pelo script PlayerAttacks:
     public int attackPower;
 
     // Update is called once per frame
@@ -19,6 +21,7 @@ public class SimpleShot_Control : MonoBehaviour
         ShotLife();
     }
 
+    // Movimentação que faz o game object se movimentar para direita:
     private void ShotDirection()
     {
         Vector2 position = this.transform.position;
@@ -27,7 +30,7 @@ public class SimpleShot_Control : MonoBehaviour
         this.transform.position = position;
     }
 
-
+    // Destrói o game object no qual este script está atrelado depois de um certo tempo:
     private void ShotLife()
     {
         Destroy(this.gameObject, timeOfDeath);
@@ -35,15 +38,18 @@ public class SimpleShot_Control : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Toda vez que um game object com o script PlayerAttacks por detectado, attackPower irá
+        // absorver a força do personagem localizada em PlayerAttributes: 
         PlayerAttacks playerAttacks = collision.GetComponent<PlayerAttacks>();
         if (playerAttacks != null && playerAttacks.playerAttributes != null)
         {
             attackPower = playerAttacks.playerAttributes.AttackPower;
         }
 
+        // Se a bala encontrar um game object com a tag Player, este game object se destruirá:
         if (collision.gameObject.CompareTag("Enemy"))
         {
-                Destroy(gameObject, 0.01f);
+            Destroy(gameObject, 0.01f);
         }
     }
 }

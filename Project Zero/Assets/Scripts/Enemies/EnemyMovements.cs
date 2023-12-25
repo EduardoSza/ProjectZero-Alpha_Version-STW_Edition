@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class EnemyMovements : MonoBehaviour
 {
-    // Antes de tudo, nós adquirimos os atributos do inimigo e a sua posição no jogo:
-    EnemyAttributes enemy;
-    Vector2 position;
+    // Esta variável contêm o script que controla os atributos principais e o sistema de vida/morte do inimigo:
+    [SerializeField]
+    private EnemyAttributes enemy;
+
+    // Esta variável guardará a posição atual do inimigo a utilizando:
+    private Vector2 position;
 
     // Os atributos abaixo servem para as movimentações baseadas em seno e cosseno
     // possam ser feitas corretamente:
@@ -48,22 +51,24 @@ public class EnemyMovements : MonoBehaviour
         initialPositionX = position.x;
     }
 
-    // Este movimento faz o inimigo se mover apenas para frente:
+    // Estes métodos deverão ser utilizados como herança por outros scripts mais especializados:
+
+    // - Movimento que faz o inimigo se mover apenas para frente:
     public void GoFoward()
     {
         position.x += -enemy.Speed * Time.deltaTime;
         this.transform.position = position;
     }
 
-    // Este movimento faz o inimigo se mover apenas para frente:
+    // - Movimento que faz o inimigo se mover apenas para frente:
     public void GoBackward()
     {
         position.x += enemy.Speed * Time.deltaTime;
         this.transform.position = position;
     }
 
-    // Este movimento faz o inimigo se movimentar ondas, de acordo com a fórmula "sen(x)":
-    public void SineWaves()
+    // - Movimento que faz o inimigo se movimentar ondas, de acordo com a fórmula "sen(x)":
+    protected void SineWaves()
     {
         position.x += -enemy.Speed * Time.deltaTime;
         float sin = Mathf.Sin(position.x * frequency) * amplitude;
@@ -78,8 +83,8 @@ public class EnemyMovements : MonoBehaviour
         transform.position = position;
     }
 
-    // Este movimento faz o inimigo se movimentar ondas, de acordo com a fórmula "cos(y)":
-    public void CossineWaves()
+    // - Movimento que faz o inimigo se movimentar ondas, de acordo com a fórmula "cos(y)":
+    protected void CossineWaves()
     {
         position.y += -enemy.Speed * Time.deltaTime;
         float cos = Mathf.Cos(position.y * frequency) * amplitude;

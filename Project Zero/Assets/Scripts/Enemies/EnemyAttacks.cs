@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyAttacks : MonoBehaviour
 {
+    // Estes métodos deverão ser utilizados como herança por outros scripts mais especializados:
 
     protected void LaserAttack(GameObject prefab)
     {

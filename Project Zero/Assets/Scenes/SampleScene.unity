@@ -346,6 +346,39 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62e73d959a758ea478ed1a6c8ba597bb, type: 3}
+--- !u!1 &78766423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 78766424}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &78766424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78766423}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.01, y: 0, z: -0.06531223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1944951037}
+  - {fileID: 464232696}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &95638550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1762,11 +1795,11 @@ Transform:
   m_GameObject: {fileID: 464232694}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.5, y: -0.03, z: 0.2910418}
+  m_LocalPosition: {x: 8.01, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 78766424}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &464232697
 Rigidbody2D:
@@ -2072,8 +2105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 531bbe6cc7b1ae44980d72bd920be0b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
   player: {fileID: 1944951038}
+  speed: 0.5
 --- !u!1 &521813410
 GameObject:
   m_ObjectHideFlags: 0
@@ -2973,7 +3006,7 @@ Transform:
   m_GameObject: {fileID: 799879014}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.15, y: 0, z: 0}
+  m_LocalPosition: {x: 1.032, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6471,7 +6504,7 @@ GameObject:
   - component: {fileID: 1944951041}
   - component: {fileID: 1944951043}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Body
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6485,14 +6518,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944951036}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.02, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 297937082}
   - {fileID: 799879015}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 78766424}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1944951038
 MonoBehaviour:
@@ -6506,7 +6539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6dbaca75285836429c2a467e5270d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1944951039}
+  playerAttributes: {fileID: 1944951039}
   startFlag: 0
 --- !u!114 &1944951039
 MonoBehaviour:
@@ -6584,7 +6617,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.093643665, y: -0.037027538}
+  m_Offset: {x: 0.15995312, y: -0.037027508}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6595,7 +6628,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7107706, y: 0.72814023}
+  m_Size: {x: 1.6041546, y: 0.69173473}
   m_EdgeRadius: 0
 --- !u!114 &1944951042
 MonoBehaviour:
@@ -7206,6 +7239,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -13.23
       objectReference: {fileID: 0}
+    - target: {fileID: 8447121216319844111, guid: 428cf6da933bc5040ad67a0dc8451b97, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8540161879979663679, guid: 428cf6da933bc5040ad67a0dc8451b97, type: 3}
       propertyPath: m_Name
       value: Laser Juggernaut
@@ -7278,8 +7315,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 1502389718}
-  - {fileID: 464232696}
-  - {fileID: 1944951037}
+  - {fileID: 78766424}
   - {fileID: 521813411}
   - {fileID: 1608034874}
   - {fileID: 240299828}

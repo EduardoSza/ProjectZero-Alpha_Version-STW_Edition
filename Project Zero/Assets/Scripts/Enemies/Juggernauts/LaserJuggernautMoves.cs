@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LaserJuggernautMoves : EnemyMovements
 {
+    // Esta variável contêm o script que controla os atributos principais e o sistema de vida/morte do inimigo:
     [SerializeField] 
     private EnemyAttributes enemyAttributes;
 
@@ -17,7 +18,8 @@ public class LaserJuggernautMoves : EnemyMovements
         }
         else
         {
-            // 0.5 é a velocidade da câmera atual:
+        // 0.5 é a velocidade da câmera no momento em que o script foi feito.
+        // Portanto, este trecho está sujeito a erros:
             enemyAttributes.Speed = 0.5f;
             GoBackward();
         }

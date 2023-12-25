@@ -9,8 +9,6 @@ public class EnemySimpleShot_Control : MonoBehaviour
     [SerializeField]
     private float timeOfDeath;
 
-    public int attackPower;
-
     // Update is called once per frame
     void Update()
     {
@@ -18,6 +16,7 @@ public class EnemySimpleShot_Control : MonoBehaviour
         ShotLife();
     }
 
+    // Movimentação que faz o game object se movimentar para esquerda:
     private void ShotDirection()
     {
         Vector2 position = this.transform.position;
@@ -27,14 +26,16 @@ public class EnemySimpleShot_Control : MonoBehaviour
         this.transform.position = position;
     }
 
-
+    // Destrói o game object no qual este script está atrelado depois de um certo tempo:
     private void ShotLife()
     {
         Destroy(this.gameObject, timeOfDeath);
     }
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Se a bala encontrar um game object com a tag Player, este game object se destruirá:
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject, 0.01f);

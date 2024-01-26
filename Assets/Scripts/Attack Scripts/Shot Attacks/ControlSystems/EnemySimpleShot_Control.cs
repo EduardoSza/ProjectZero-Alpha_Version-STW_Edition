@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemySimpleShot_Control : MonoBehaviour
@@ -8,6 +9,8 @@ public class EnemySimpleShot_Control : MonoBehaviour
     private float speed;
     [SerializeField]
     private float timeOfDeath;
+    [SerializeField]
+    private Animator animator;
 
     // Update is called once per frame
     void Update()
@@ -35,10 +38,19 @@ public class EnemySimpleShot_Control : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Se a bala encontrar um game object com a tag Player, este game object se destruirá:
+        // Se a bala encontrar um game object com a tag Player, este game object se destruirá.
+        // (Obs.: Neste caso específico, a bala está absorvendo o animator gameObject "Sprite" do Player).
         if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject, 0.01f);
+            animator = collision.gameObject.GetComponent<Animator>();
+
+            if (animator != null)
+            {
+                if (animator.GetBool("doBarrelRoll") == false)
+                {
+                    Destroy(gameObject, 0.01f);
+                }
+            }
         }
     }
 }

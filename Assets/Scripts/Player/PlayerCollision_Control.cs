@@ -20,6 +20,8 @@ public class PlayerCollision_Control : MonoBehaviour
     private float flickeringTime;
     [SerializeField]
     private Animator anim;
+    
+    private bool noDamageFlag = false;
 
     // Esta variável armazena o som de dano quando o personagem é atingido:
     [SerializeField]
@@ -38,7 +40,7 @@ public class PlayerCollision_Control : MonoBehaviour
         // Abaixo estão os ifs responsáveis por tudo isso:
 
         //  - Se for um inimigo comum, ele tira só 1 de dano:
-        if ((collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("EnemyAttacks")) && anim.GetBool("doBarrelRoll") == false)
+        if ((collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("EnemyAttacks")) && anim.GetBool("doBarrelRoll") == false && noDamageFlag == false)
         {
             playerAttributes.LifePoints--;
             StartCoroutine(Flickering());
@@ -56,7 +58,7 @@ public class PlayerCollision_Control : MonoBehaviour
     // desativando por momentos o sprite do personagem e o seu colisor.
     IEnumerator Flickering()
     {
-        boxCollider.enabled = false;
+        noDamageFlag = true;
         damageSound.Play();
 
         spriteRenderer.enabled = false;
@@ -71,6 +73,6 @@ public class PlayerCollision_Control : MonoBehaviour
         yield return new WaitForSeconds(flickeringTime/5);
         spriteRenderer.enabled = true;
 
-        boxCollider.enabled = true;
+        noDamageFlag = false;
     }
 }

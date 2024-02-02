@@ -13,15 +13,12 @@ public class LaserJuggernautMoves : EnemyMovements
     {
         if (StartFlag == false)
         {
-
+            // O inimigo segue em frente se ainda não encontrou um Starting Point:
             GoFoward();
         }
         else
         {
-        // 0.5 é a velocidade da câmera no momento em que o script foi feito.
-        // Portanto, este trecho está sujeito a erros:
-            enemyAttributes.Speed = 0.5f;
-            GoBackward();
+            // O inimigo fica parado quando encontra um Starting Point...
         }
     }
 }

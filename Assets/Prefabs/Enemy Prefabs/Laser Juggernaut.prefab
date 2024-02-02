@@ -436,7 +436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyMovements: {fileID: 2731769946363487411}
   prefab: {fileID: 4641776270991842711, guid: 54e60bea03231d54295cf45d195f585b, type: 3}
-  timeBeforeAttack: 4
+  timeBeforeAttack: 5
 --- !u!50 &7096482327514909485
 Rigidbody2D:
   serializedVersion: 4

@@ -49,7 +49,7 @@ public class PlayerMovements : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector2 position = this.transform.position;
-        position.y += moveVertical * playerAttributes.Speed * Time.deltaTime;
+        position.y += moveVertical * playerAttributes.Speed * Time.deltaTime * GlobalVariables.globalSpeed;
         this.transform.position = position;
     }
 
@@ -59,7 +59,7 @@ public class PlayerMovements : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
 
         Vector2 position = this.transform.position;
-        position.x += moveHorizontal * playerAttributes.Speed * Time.deltaTime;
+        position.x += moveHorizontal * playerAttributes.Speed * Time.deltaTime * GlobalVariables.globalSpeed;
         this.transform.position = position;
     }
 }

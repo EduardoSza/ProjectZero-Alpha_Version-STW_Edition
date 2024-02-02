@@ -56,21 +56,21 @@ public class EnemyMovements : MonoBehaviour
     // - Movimento que faz o inimigo se mover apenas para frente:
     public void GoFoward()
     {
-        position.x += -enemy.Speed * Time.deltaTime;
+        position.x += -enemy.Speed * Time.deltaTime * GlobalVariables.globalSpeed;
         this.transform.position = position;
     }
 
     // - Movimento que faz o inimigo se mover apenas para frente:
     public void GoBackward()
     {
-        position.x += enemy.Speed * Time.deltaTime;
+        position.x += enemy.Speed * Time.deltaTime * GlobalVariables.globalSpeed;
         this.transform.position = position;
     }
 
     // - Movimento que faz o inimigo se movimentar ondas, de acordo com a fórmula "sen(x)":
     protected void SineWaves()
     {
-        position.x += -enemy.Speed * Time.deltaTime;
+        position.x += -enemy.Speed * Time.deltaTime * GlobalVariables.globalSpeed;
         float sin = Mathf.Sin(position.x * frequency) * amplitude;
 
         if (inverseFlow == true)
@@ -86,7 +86,7 @@ public class EnemyMovements : MonoBehaviour
     // - Movimento que faz o inimigo se movimentar ondas, de acordo com a fórmula "cos(y)":
     protected void CossineWaves()
     {
-        position.y += -enemy.Speed * Time.deltaTime;
+        position.y += -enemy.Speed * Time.deltaTime * GlobalVariables.globalSpeed;
         float cos = Mathf.Cos(position.y * frequency) * amplitude;
 
         if (inverseFlow == true)

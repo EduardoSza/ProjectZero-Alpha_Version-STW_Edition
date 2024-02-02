@@ -68,7 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 3
   attackPower: 1
-  speed: 3.3
+  speed: 3
   anim: {fileID: 7229236576516990661}
   enemyCollider: {fileID: 484033938566143491}
 --- !u!114 &565167697006650709

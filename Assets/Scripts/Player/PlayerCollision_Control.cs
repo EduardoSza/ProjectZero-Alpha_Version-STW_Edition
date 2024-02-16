@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,12 +6,18 @@ using UnityEngine;
 // Esse script controla a
 public class PlayerCollision_Control : MonoBehaviour
 {
-    // Esta variável contêm o script que permite ao player se movimentar:
+    // Esta variável contém o script que permite ao player se movimentar:
     [SerializeField]
     private PlayerMovements playerMovements;
-    // Esta variável contêm o script que controla os atributos principais e o sistema de vida/morte do player:
+    // Esta variável contém o script que controla os atributos principais e o sistema de vida/morte do player:
     [SerializeField]
     private PlayerAttributes playerAttributes;
+    // Esta variável contém o script os ataques do player:
+    [SerializeField]
+    private PlayerAttacks playerAttacks;
+    // Esta variável contém o script que controla certas animações do player:
+    [SerializeField]
+    private PlayerAnimationsControl animControl;
 
     [SerializeField]
     private SpriteRenderer spriteRenderer;
@@ -50,6 +57,12 @@ public class PlayerCollision_Control : MonoBehaviour
         if (collision.gameObject.CompareTag("Boss") || collision.gameObject.CompareTag("BossAttacks"))
         {
             playerAttributes.LifePoints = 0;
+        }
+
+        //  - Porém e o inimigo for um boss, o jogador morre na hora.:
+        if ((collision.gameObject.CompareTag("EnemyAttacks") || collision.gameObject.CompareTag("BossAttacks")) && animControl.isParrying == true)
+        {
+            playerAttacks.ParryCounter();
         }
     }
 

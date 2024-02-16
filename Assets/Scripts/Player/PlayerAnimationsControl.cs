@@ -7,7 +7,7 @@ public class PlayerAnimationsControl : MonoBehaviour
 {
     // Variável que armazena o Box Collider do persongem:
     [SerializeField]
-    private BoxCollider2D boxCollider;
+    private PlayerAttacks playerAttacks;
 
     // Variável que armazena o Animator do personagem:
     [SerializeField]
@@ -17,11 +17,17 @@ public class PlayerAnimationsControl : MonoBehaviour
     [SerializeField]
     private float barrelTime;
 
+    [SerializeField]
+    private float parryTime;
+
+    public bool isParrying = false;
+
     void Update()
     {
         // Garante que o personagem possa desviar de ataques, fazendo giros em torno do seu próprio eixo.
         if (Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.X))
         {
+            StartCoroutine(Parrying());
             StartCoroutine(BarrelRoll());
         }
     }
@@ -38,5 +44,25 @@ public class PlayerAnimationsControl : MonoBehaviour
         yield return new WaitForSeconds(barrelTime);
 
         anim.SetBool("doBarrelRoll", false);
+
+        playerAttacks.firstSuperFlag = false;
+    }
+
+    IEnumerator Parrying()
+    {
+        isParrying = true;
+
+        yield return new WaitForSeconds(parryTime);
+
+        isParrying = false;
     }
 }
+
+
+
+
+
+
+
+
+

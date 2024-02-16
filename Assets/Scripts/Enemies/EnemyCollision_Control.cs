@@ -16,9 +16,14 @@ public class EnemyCollision_Control : MonoBehaviour
         // Este trecho verificado se o game object encostando no inimigo contém o script SimpleShot_Control (ou seja, se é
         // uma bala vinda do player). Se for, o inimigo leva o dano corresponente ao attackPower em PlayerAttributes:
         SimpleShot_Control simpleShot = collision.GetComponent<SimpleShot_Control>();
+        SuperShot_Control superShot = collision.GetComponent<SuperShot_Control>();
         if (simpleShot != null)
         {
             enemyAttributes.LifePoints -= simpleShot.attackPower;
+        }
+        else if (superShot != null)
+        {
+            enemyAttributes.LifePoints -= superShot.attackPower;
         }
 
         // Starting Point é um game object vazio, dotado de apenas um collisor em trigger.

@@ -1007,9 +1007,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bfd8bdaa1518674c93d89572b35552a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 1944951041}
+  playerAttacks: {fileID: 799879016}
   anim: {fileID: 297937083}
   barrelTime: 0.5
+  parryTime: 0.1
+  isParrying: 0
 --- !u!61 &297937086
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2518,8 +2520,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1420fc6790c8d2746bc7d5553f2fa253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 19233656325617734, guid: aaec9fb5153bae946b204a59cd7fad23, type: 3}
+  Prefab1: {fileID: 19233656325617734, guid: aaec9fb5153bae946b204a59cd7fad23, type: 3}
+  Prefab2: {fileID: 3860380480537955624, guid: 61eb79d60c434ac498891a76aaab2316, type: 3}
   playerAttributes: {fileID: 1944951039}
+  parryFlag: 0
+  firstSuperFlag: 0
 --- !u!58 &799879017
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3774,7 +3779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ceca738ec4f7441a7c643e23c85d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  globalSpeedMultiplyer: 1
+  globalSpeedMultiplyer: 1.25
 --- !u!1001 &1475938616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3880,9 +3885,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d93796194c2f2547902728e2b39e236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  rig: {fileID: 0}
-  width: 0
   speed: 0.5
 --- !u!4 &1524333879 stripped
 Transform:
@@ -5142,6 +5144,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMovements: {fileID: 1944951038}
   playerAttributes: {fileID: 1944951039}
+  playerAttacks: {fileID: 799879016}
+  animControl: {fileID: 297937085}
   spriteRenderer: {fileID: 297937084}
   boxCollider: {fileID: 1944951041}
   flickeringTime: 1

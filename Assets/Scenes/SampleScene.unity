@@ -47733,6 +47733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ceca738ec4f7441a7c643e23c85d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   globalSpeedMultiplyer: 1.45
 --- !u!1 &1469324853 stripped
 GameObject:
@@ -48059,6 +48060,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a37258163669efa4087399a4acd94e6d, type: 3}
+=======
+  globalSpeedMultiplyer: 1.35
+>>>>>>> Stashed changes
 --- !u!1001 &1475938616
 PrefabInstance:
   m_ObjectHideFlags: 0

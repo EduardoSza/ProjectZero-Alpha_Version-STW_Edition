@@ -1,21 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerAttributes : MonoBehaviour
 {
     [SerializeField]
-    private int lifePoints; // Contém a vida do personagem.
+    private int lifePoints; // Contï¿½m a vida do personagem.
     [SerializeField]
-    private int attackPower; // Contém o tanto de dano que o ataque do personagem pode dar.
+    private int attackPower; // Contï¿½m o tanto de dano que o ataque do personagem pode dar.
     [SerializeField]
-    private float speed; // Contém a velocidade do personagem.
+    private float speed; // Contï¿½m a velocidade do personagem.
 
-    // Esta variável contém o Animator do player, responsável por administrar todas as suas animações,
-    // possuindo também variáveis internas que podem ser vistas na janela Animator:
+    // Esta variï¿½vel contï¿½m o Animator do player, responsï¿½vel por administrar todas as suas animaï¿½ï¿½es,
+    // possuindo tambï¿½m variï¿½veis internas que podem ser vistas na janela Animator:
     [SerializeField]
     private Animator anim;
-    // O colider é responsável por permitir que o player encoste e sinta as coisas ao seu redor:
+    // O colider ï¿½ responsï¿½vel por permitir que o player encoste e sinta as coisas ao seu redor:
     [SerializeField]
     private BoxCollider2D boxCollider;
 
@@ -24,7 +24,7 @@ public class PlayerAttributes : MonoBehaviour
         ItMayDie();
     }
 
-    // Get e Set para encapsulamento da variável "lifePoints":
+    // Get e Set para encapsulamento da variï¿½vel "lifePoints":
     public int LifePoints
     {
         get 
@@ -38,7 +38,7 @@ public class PlayerAttributes : MonoBehaviour
         }
     }
 
-    // Get e Set para encapsulamento da variável "attackDamage":
+    // Get e Set para encapsulamento da variï¿½vel "attackDamage":
     public int AttackPower
     {
         get
@@ -52,7 +52,7 @@ public class PlayerAttributes : MonoBehaviour
         }
     }
 
-    // Get e Set para encapsulamento da variável "speed":
+    // Get e Set para encapsulamento da variï¿½vel "speed":
     public float Speed
     {
         get
@@ -75,14 +75,15 @@ public class PlayerAttributes : MonoBehaviour
         }
     }
 
-    // O IEnumerator permite que ações acontecem apenas depois de um determinado período de tempo.
-    // Neste caso, o boxCollider do player é desativado e a animação de morte é acionada,
-    // com o game object sendo destruído momentos depois.
+    // O IEnumerator permite que aï¿½ï¿½es acontecem apenas depois de um determinado perï¿½odo de tempo.
+    // Neste caso, o boxCollider do player ï¿½ desativado e a animaï¿½ï¿½o de morte ï¿½ acionada,
+    // com o game object sendo destruï¿½do momentos depois.
     IEnumerator Death()
     {
         boxCollider.enabled = false;
         anim.SetBool("isDead", true);
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
+        SceneManager.LoadScene("GameOver");
     }
 }

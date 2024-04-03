@@ -7,6 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
 
  [SerializeField] private string NomeDoLevelDoJogo;
+ [SerializeField] private string Menu;
  [SerializeField] private GameObject painelMenuInicial;
 
    public void Jogar(){
@@ -16,6 +17,10 @@ public class NewBehaviourScript : MonoBehaviour
    public void Sair(){
     Debug.Log("Sair do Jogo");
     Application.Quit();
+   }
+
+   public void Sair_Game_Over(){
+    SceneManager.LoadScene(Menu);
    }
 
 }

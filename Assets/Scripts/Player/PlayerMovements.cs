@@ -5,16 +5,25 @@ using UnityEngine;
 
 public class PlayerMovements : MonoBehaviour
 {
-    // Esta variável contêm o script que controla os atributos principais e o sistema de vida/morte do player:
+    
+    public float yMin = -4.6f;
+
+    public float yMax = 4.6f;
+    public float xMin = 5.5f;
+    public float xMax = 21f;
+
+
+
+    // Esta variï¿½vel contï¿½m o script que controla os atributos principais e o sistema de vida/morte do player:
     [SerializeField]
     private PlayerAttributes playerAttributes;
 
-    // A bool startFlag é responsável por detectar se o jogador alcançou o Starting Point, 
-    // significando que o jogo já começou e/ou que agora você pode movimentar o personagem:
+    // A bool startFlag ï¿½ responsï¿½vel por detectar se o jogador alcanï¿½ou o Starting Point, 
+    // significando que o jogo jï¿½ comeï¿½ou e/ou que agora vocï¿½ pode movimentar o personagem:
     [SerializeField]
     private bool startFlag = false;
 
-    // Get e Set para encapsulamento da variável "startFlag":
+    // Get e Set para encapsulamento da variï¿½vel "startFlag":
     public bool StartFlag {
         get 
         { 
@@ -29,7 +38,7 @@ public class PlayerMovements : MonoBehaviour
 
     void Update()
     {
-        // Enquanto o Starting Point não é encontrado, a nave moverá infinitamente para a direita:
+        // Enquanto o Starting Point nï¿½o ï¿½ encontrado, a nave moverï¿½ infinitamente para a direita:
         if(startFlag == false)
         {
             Vector2 position = this.transform.position;
@@ -43,23 +52,30 @@ public class PlayerMovements : MonoBehaviour
         }
     }
 
-    // Permite as movimentaçções para cima e para baixo:
+    // Permite as movimentaï¿½ï¿½ï¿½es para cima e para baixo:
     private void AllowVerticalMovement()
     {
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector2 position = this.transform.position;
         position.y += moveVertical * playerAttributes.Speed * Time.deltaTime * GlobalVariables.globalSpeed;
+        position.y = Mathf.Clamp(position.y, yMin, yMax);
+
         this.transform.position = position;
+
     }
 
-    // Permite as movimentaçções para esquerda e para direita:
+
+    // Permite as movimentaï¿½ï¿½ï¿½es para esquerda e para direita:
     private void AllowHorizontalMovement()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
 
         Vector2 position = this.transform.position;
         position.x += moveHorizontal * playerAttributes.Speed * Time.deltaTime * GlobalVariables.globalSpeed;
+        position.x = Mathf.Clamp(position.x, xMin, xMax);
+
         this.transform.position = position;
+       
     }
 }

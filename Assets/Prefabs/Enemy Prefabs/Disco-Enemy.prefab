@@ -83,6 +83,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89eb42e496dec664499a6bda861e28db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageColor: {r: 0, g: 0, b: 0, a: 0}
+  sprite: {fileID: 8398957884153777705}
   enemyAttributes: {fileID: 2695033945715637750}
   enemyMovements: {fileID: 1957529553130721510}
 --- !u!50 &5748256185506970824

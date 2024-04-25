@@ -9,14 +9,16 @@ public class PlayerMovements : MonoBehaviour
     public float yMin = -4.6f;
     public float yMax = 4.6f;
     public float xMin = 5.5f;
-    public float xMax = 21f;
+    public float xMax = 23f;
 
     // Esta variavel contem o script que controla os atributos principais e o sistema de vida/morte do player:
     [SerializeField]
     private PlayerAttributes playerAttributes;
 
     [SerializeField]
-    private Joystick joystick;
+    private Rigidbody2D rig;
+
+    public float deltaX, deltaY;
 
     // A bool startFlag e responsavel por detectar se o jogador alcancou o Starting Point, 
     // significando que o jogo ja comecou e/ou que agora voce pode movimentar o personagem:
@@ -47,31 +49,35 @@ public class PlayerMovements : MonoBehaviour
         }
         else
         {
+            if (Input.touchCount > 0)
+            {
+                Touch touch = Input.GetTouch(0);
+                Vector2 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
+
+                switch (touch.phase)
+                {
+                    case TouchPhase.Began:
+                        deltaX = touchPos.x - transform.position.x;
+                        deltaY = touchPos.y - transform.position.y;
+                        break;
+                    case TouchPhase.Moved:
+                        rig.MovePosition(new Vector2((touchPos.x - deltaX), (touchPos.y - deltaY)));
+                        break;
+                    case TouchPhase.Ended:
+                        rig.velocity = Vector2.zero;
+                        break;
+                }
+            }
+
             AllowHorizontalMovement();
             AllowVerticalMovement();
-        }
-    }
-
-    private int NormalizeMoves(float value)
-    {
-        if (value > 0)
-        {
-            return 1;
-        }
-        else if (value < 0)
-        {
-            return -1;
-        }
-        else
-        {
-            return 0;
         }
     }
 
     // Permite as movimentacoes para cima e para baixo:
     private void AllowVerticalMovement()
     {
-        float moveVertical = Input.GetAxis("Vertical") + joystick.Vertical;
+        float moveVertical = Input.GetAxis("Vertical");
 
         Vector2 position = this.transform.position;
         position.y += moveVertical * playerAttributes.Speed * Time.deltaTime * GlobalVariables.globalSpeed;
@@ -85,7 +91,7 @@ public class PlayerMovements : MonoBehaviour
     // Permite as movimentacoes para esquerda e para direita:
     private void AllowHorizontalMovement()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal") + joystick.Horizontal;
+        float moveHorizontal = Input.GetAxis("Horizontal");
         //moveHorizontal = NormalizeMoves(moveHorizontal);
 
         Vector2 position = this.transform.position;

@@ -122,7 +122,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1004280529
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 537d1efbd47afd54b819fbc7b71bed63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c804e6dc5c534c648ba83937db3d68a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 8
+  lifePoints: 12
   attackPower: 1
   speed: 2
   scoreValue: 100

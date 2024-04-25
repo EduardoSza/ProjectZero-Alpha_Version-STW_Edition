@@ -1120,9 +1120,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- Programa\xE7\xE3o -\n\nThiago Chaves\nCarlos Henrique\nEduardo Souza\n\xC1lvaro
-    Lima\n\n\n- Game Design -\n\nThiago Chaves\n\n\n- Artes Originais - \n\nIsabelly
-    Reny (Artista 2D)\n\n\n- Artes Third Party -\n\nAnsimuz (Artista 2D)\n\n"
+  m_text: "- Programming -\n\nThiago Chaves\nCarlos Henrique\nEduardo Souza\n\xC1lvaro
+    Lima\n\n\n- Game Design -\n\nThiago Chaves\n\n\n- Original Arts - \n\nIsabelly
+    Reny (Artista 2D)\n\n\n- Third Party Arts -\n\nAnsimuz (Artista 2D)\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7799c0c6cc0c21d4f934c8489e8626c3, type: 2}
   m_sharedMaterial: {fileID: -3038507012032481362, guid: 7799c0c6cc0c21d4f934c8489e8626c3, type: 2}

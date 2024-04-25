@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1886693017
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 734670257, guid: 69116589b24e6d2418c72bee3cb152f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c804e6dc5c534c648ba83937db3d68a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 3
+  lifePoints: 5
   attackPower: 1
   speed: 1.3
   scoreValue: 50
@@ -193,6 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 7776140725604961064}
   damageColor: {r: 0.3433962, g: 0.3433962, b: 0.3433962, a: 1}
+  E_ShieldFlag: 0
   enemyAttributes: {fileID: 5615136129896027363}
   enemyMovements: {fileID: 3178145160653061951}
 --- !u!50 &3344668978942632597

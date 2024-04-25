@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlayerInMenu : MonoBehaviour
 {
-    public float speed = 0;
+    public float speed;
     public bool startFlag = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame

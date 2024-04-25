@@ -11,8 +11,6 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private GameObject gameOverPanel;
     [SerializeField]
-    private GameObject joystick;
-    [SerializeField]
     private AudioSource gameBackgroundMusic;
     [SerializeField]
     private TextMeshProUGUI gameScoreText;
@@ -35,7 +33,6 @@ public class GameController : MonoBehaviour
     public void ShowGameOver()
     {
         gameOverPanel.SetActive(true);
-        joystick.SetActive(false);
         gameBackgroundMusic.Stop();
         Time.timeScale = 0;
     }
@@ -43,7 +40,6 @@ public class GameController : MonoBehaviour
     public void ShowOnPausePanel()
     {
         pausePanel.SetActive(true);
-        joystick.SetActive(false);
         gameBackgroundMusic.Pause();
         Time.timeScale = 0;
     }
@@ -51,14 +47,13 @@ public class GameController : MonoBehaviour
     public void ShowOffPausePanel()
     {
         pausePanel.SetActive(false);
-        joystick.SetActive(true);
         gameBackgroundMusic.Play();
         Time.timeScale = 1;
     }
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void ExitToMenu()

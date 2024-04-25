@@ -9,10 +9,8 @@ public class GlobalVariables : MonoBehaviour
     public static bool waveIsFinished = false;
     public static int gameScore = 0;
 
-    public int gsc = 0;
-
-    void Update()
+    private void Start()
     {
-        gsc = gameScore;
+        gameScore = 0;
     }
 }

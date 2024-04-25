@@ -36,7 +36,7 @@ public class RabbitMovement : EnemyMovements
             beganFlag = true;
         }
         
-        if (ProtectedEnemyAttributes.LifePoints == maximumLife / 3)
+        if (ProtectedEnemyAttributes.LifePoints == maximumLife / 4)
         {
             E_Shield.SetActive(false);
             enemyCollision_Control.E_ShieldFlag = false;

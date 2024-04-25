@@ -30,9 +30,8 @@ public class PlayerAttacks : MonoBehaviour
     void Update()
     {
 
-        if ((Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Z) ||
-            (Input.touchCount > 0 && (Input.GetTouch(0).phase == TouchPhase.Moved || Input.GetTouch(0).phase == TouchPhase.Stationary))
-            ) && shootedNow == false && parryFlag == false && playerAnimations.isRolling == false && playerMovements.StartFlag == true)
+        if ((Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Z) || (Input.touchCount > 0)) 
+            && shootedNow == false && parryFlag == false && playerAnimations.isRolling == false && playerMovements.StartFlag == true)
         {
             StartCoroutine(ShotAttackProcess());
         }

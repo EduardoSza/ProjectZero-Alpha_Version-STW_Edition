@@ -21,6 +21,7 @@ public class PlayerCollision_Control : MonoBehaviour
 
     [SerializeField]
     private SpriteRenderer spriteRenderer;
+    public Color damageColor;
     [SerializeField]
     private BoxCollider2D boxCollider;
     [SerializeField]
@@ -54,7 +55,7 @@ public class PlayerCollision_Control : MonoBehaviour
         }
 
         //  - Porém e o inimigo for um boss, o jogador morre na hora.:
-        if (collision.gameObject.CompareTag("Boss") || collision.gameObject.CompareTag("BossAttacks"))
+        if (collision.gameObject.CompareTag("Boss") || collision.gameObject.CompareTag("BossAttacks") && anim.GetBool("doBarrelRoll") == false && noDamageFlag == false)
         {
             playerAttributes.LifePoints = 0;
         }
@@ -74,17 +75,17 @@ public class PlayerCollision_Control : MonoBehaviour
         noDamageFlag = true;
         damageSound.Play();
 
-        spriteRenderer.enabled = false;
+        spriteRenderer.color = damageColor;
         yield return new WaitForSeconds(flickeringTime/5);
-        spriteRenderer.enabled = true;
+        spriteRenderer.color = Color.white;
         yield return new WaitForSeconds(flickeringTime/5);
-        spriteRenderer.enabled = false;
+        spriteRenderer.color = damageColor;
+        yield return new WaitForSeconds(flickeringTime / 5);
+        spriteRenderer.color = Color.white;
         yield return new WaitForSeconds(flickeringTime/5);
-        spriteRenderer.enabled = true;
-        yield return new WaitForSeconds(flickeringTime/5);
-        spriteRenderer.enabled = false;
-        yield return new WaitForSeconds(flickeringTime/5);
-        spriteRenderer.enabled = true;
+        spriteRenderer.color = damageColor;
+        yield return new WaitForSeconds(flickeringTime / 5);
+        spriteRenderer.color = Color.white;
 
         noDamageFlag = false;
     }

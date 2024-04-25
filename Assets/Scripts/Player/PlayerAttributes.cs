@@ -1,30 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 public class PlayerAttributes : MonoBehaviour
 {
     [SerializeField]
-    private int lifePoints; // Cont�m a vida do personagem.
+    private Slider lifeBarSlider;
+    [SerializeField] 
+    private int maxLifePoints;
     [SerializeField]
-    private int attackPower; // Cont�m o tanto de dano que o ataque do personagem pode dar.
-    [SerializeField]
-    private float speed; // Cont�m a velocidade do personagem.
+    private int lifePoints; // Contem a vida do personagem.
 
-    // Esta vari�vel cont�m o Animator do player, respons�vel por administrar todas as suas anima��es,
-    // possuindo tamb�m vari�veis internas que podem ser vistas na janela Animator:
+    [SerializeField]
+    private float speed; // Contem a velocidade do personagem.
+
+    // Esta variavel contem o Animator do player, responsavel por administrar todas as suas animacoes,
+    // possuindo tambem variaveis internas que podem ser vistas na janela Animator:
     [SerializeField]
     private Animator anim;
-    // O colider � respons�vel por permitir que o player encoste e sinta as coisas ao seu redor:
+
+    // O colider e responsavel por permitir que o player encoste e sinta as coisas ao seu redor:
     [SerializeField]
     private BoxCollider2D boxCollider;
+
+    // Usado quando o player morre:
+    [SerializeField]
+    private AudioSource deathExplosionSound;
+
+    void Start()
+    {
+        SetLifeBarMax(maxLifePoints);
+    }
 
     void Update()
     {
         ItMayDie();
     }
 
-    // Get e Set para encapsulamento da vari�vel "lifePoints":
+    // Get e Set para encapsulamento da variavel "lifePoints":
     public int LifePoints
     {
         get 
@@ -35,24 +49,18 @@ public class PlayerAttributes : MonoBehaviour
         set 
         {  
             lifePoints = value;
+            lifeBarSlider.value = value;
         }
     }
 
-    // Get e Set para encapsulamento da vari�vel "attackDamage":
-    public int AttackPower
+    private void SetLifeBarMax(int life)
     {
-        get
-        {
-            return attackPower;
-        }
-
-        set
-        {
-            attackPower = value;
-        }
+        lifeBarSlider.maxValue = life;
+        lifeBarSlider.value = life;
+        lifePoints = life;
     }
 
-    // Get e Set para encapsulamento da vari�vel "speed":
+    // Get e Set para encapsulamento da variavel "speed":
     public float Speed
     {
         get
@@ -75,15 +83,16 @@ public class PlayerAttributes : MonoBehaviour
         }
     }
 
-    // O IEnumerator permite que a��es acontecem apenas depois de um determinado per�odo de tempo.
-    // Neste caso, o boxCollider do player � desativado e a anima��o de morte � acionada,
-    // com o game object sendo destru�do momentos depois.
+    // O IEnumerator permite que acoes acontecem apenas depois de um determinado periodo de tempo.
+    // Neste caso, o boxCollider do player e desativado e a animacao de morte e acionada,
+    // com o game object sendo destruido momentos depois.
     IEnumerator Death()
     {
         boxCollider.enabled = false;
         anim.SetBool("isDead", true);
-        yield return new WaitForSeconds(0.5f);
-        Destroy(gameObject);
-        SceneManager.LoadScene("GameOver");
+        //deathExplosionSound.Play();
+        yield return new WaitForSeconds(1f);
+        Destroy(this.gameObject);
+        GameController.instance.ShowGameOver();
     }
 }

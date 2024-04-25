@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class LaserJuggernautMoves : EnemyMovements
 {
-    // Esta variável contêm o script que controla os atributos principais e o sistema de vida/morte do inimigo:
-    [SerializeField] 
-    private EnemyAttributes enemyAttributes;
-
     // Update is called once per frame
     void Update()
     {

@@ -10,11 +10,13 @@ TagManager:
   - EnemyAttacks
   - Boss
   - BossAttacks
+  - FlipPoint
+  - Joint
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
@@ -53,9 +55,27 @@ TagManager:
   - name: Player
     uniqueID: 390226249
     locked: 0
-  - name: Enemy
+  - name: Foreground
+    uniqueID: 1037487983
+    locked: 0
+  - name: EnemyType1
     uniqueID: 1886693017
+    locked: 0
+  - name: EnemyType2
+    uniqueID: 1004280529
+    locked: 0
+  - name: EnemyType3
+    uniqueID: 3099897727
+    locked: 0
+  - name: EnemyType4
+    uniqueID: 610791969
     locked: 0
   - name: Shoots
     uniqueID: 591301491
+    locked: 0
+  - name: GUI
+    uniqueID: 4068120903
+    locked: 0
+  - name: EnemyType5
+    uniqueID: 284884591
     locked: 0

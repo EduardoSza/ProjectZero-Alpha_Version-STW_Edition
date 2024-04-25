@@ -71,10 +71,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1886693017
-  m_SortingLayer: 3
+  m_SortingLayerID: 1004280529
+  m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1591761280, guid: 006cb755399c49f45a47740a60a07f27, type: 3}
+  m_Sprite: {fileID: 1991304865, guid: 238723538b5220a498f9b55b0f4b5865, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b256d85a59778d4086922ed1bd88e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 8939730562974938053}
+  enemyAttributes: {fileID: 8939730562974938053}
   amplitude: 1.3
   frequency: 1
   inverseFlow: 0
@@ -172,9 +172,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c804e6dc5c534c648ba83937db3d68a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 1
+  lifePoints: 3
   attackPower: 3
   speed: 2.5
+  scoreValue: 100
   anim: {fileID: 1820748208214456597}
   enemyCollider: {fileID: 122070755306060188}
 --- !u!114 &2531934590943311922
@@ -189,8 +190,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89eb42e496dec664499a6bda861e28db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageColor: {r: 0, g: 0, b: 0, a: 0}
   sprite: {fileID: 3362065907984322176}
+  damageColor: {r: 0, g: 0, b: 0, a: 0}
+  E_ShieldFlag: 0
   enemyAttributes: {fileID: 8939730562974938053}
   enemyMovements: {fileID: 8374671556879893779}
 --- !u!61 &122070755306060188

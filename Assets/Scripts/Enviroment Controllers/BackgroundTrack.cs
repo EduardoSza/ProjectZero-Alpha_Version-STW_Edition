@@ -13,7 +13,7 @@ public class BackgroundTrack : MonoBehaviour
     void Start()
     {
         startPos = transform.position;
-        repeatWidth = boxCollider.size.x/2;
+        repeatWidth = boxCollider.size.x;
     }
 
     // Update is called once per frame

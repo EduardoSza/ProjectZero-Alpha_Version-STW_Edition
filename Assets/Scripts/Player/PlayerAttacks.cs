@@ -12,9 +12,16 @@ public class PlayerAttacks : MonoBehaviour
     [SerializeField]
     private GameObject Prefab2;
 
-    // Esta variável contêm o script que controla os atributos principais e o sistema de vida/morte do player:
-    [SerializeField]
+    // Esta variável contêm o script que controla os atributos principais e o sistema de vida/morte do player
     public PlayerAttributes playerAttributes;
+
+    public PlayerMovements playerMovements;
+
+    public PlayerAnimationsControl playerAnimations;
+
+    public bool shootedNow = false;
+
+    public float timeBeforeAttack = 0;
 
     public bool parryFlag = false;
 
@@ -22,16 +29,32 @@ public class PlayerAttacks : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Z) && parryFlag == false)
+
+        if ((Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Z) ||
+            (Input.touchCount > 0 && (Input.GetTouch(0).phase == TouchPhase.Moved || Input.GetTouch(0).phase == TouchPhase.Stationary))
+            ) && shootedNow == false && parryFlag == false && playerAnimations.isRolling == false && playerMovements.StartFlag == true)
         {
-            ShotAttack(Prefab1);
+            StartCoroutine(ShotAttackProcess());
         }
+
+        //if (shootedNow == false && parryFlag == false && playerAnimations.isRolling == false && playerMovements.StartFlag == true)
+        //{
+        //    StartCoroutine(ShotAttackProcess());
+        //}
     }
 
     // Este ataque instancia um um tiro na posição do game object ao qual este script está atrelado:
-    void ShotAttack(GameObject prefab)
+    public void ShotAttack(GameObject prefab)
     {
         Instantiate(prefab, transform.position, transform.rotation);
+    }
+
+    IEnumerator ShotAttackProcess()
+    {
+        ShotAttack(Prefab1);
+        shootedNow = true;
+        yield return new WaitForSeconds(timeBeforeAttack);
+        shootedNow = false;
     }
 
     // Este ataque instancia um um tiro na posição do game object ao qual este script está atrelado:

@@ -5,25 +5,25 @@ using UnityEngine;
 
 public class PlayerMovements : MonoBehaviour
 {
-    
+    // Estas variaveis impedem que o player saia das bordas da câmera:
     public float yMin = -4.6f;
-
     public float yMax = 4.6f;
     public float xMin = 5.5f;
     public float xMax = 21f;
 
-
-
-    // Esta vari�vel cont�m o script que controla os atributos principais e o sistema de vida/morte do player:
+    // Esta variavel contem o script que controla os atributos principais e o sistema de vida/morte do player:
     [SerializeField]
     private PlayerAttributes playerAttributes;
 
-    // A bool startFlag � respons�vel por detectar se o jogador alcan�ou o Starting Point, 
-    // significando que o jogo j� come�ou e/ou que agora voc� pode movimentar o personagem:
+    [SerializeField]
+    private Joystick joystick;
+
+    // A bool startFlag e responsavel por detectar se o jogador alcancou o Starting Point, 
+    // significando que o jogo ja comecou e/ou que agora voce pode movimentar o personagem:
     [SerializeField]
     private bool startFlag = false;
 
-    // Get e Set para encapsulamento da vari�vel "startFlag":
+    // Get e Set para encapsulamento da variavel "startFlag":
     public bool StartFlag {
         get 
         { 
@@ -38,7 +38,7 @@ public class PlayerMovements : MonoBehaviour
 
     void Update()
     {
-        // Enquanto o Starting Point n�o � encontrado, a nave mover� infinitamente para a direita:
+        // Enquanto o Starting Point nao e encontrado, a nave movera infinitamente para a direita:
         if(startFlag == false)
         {
             Vector2 position = this.transform.position;
@@ -52,10 +52,26 @@ public class PlayerMovements : MonoBehaviour
         }
     }
 
-    // Permite as movimenta���es para cima e para baixo:
+    private int NormalizeMoves(float value)
+    {
+        if (value > 0)
+        {
+            return 1;
+        }
+        else if (value < 0)
+        {
+            return -1;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+
+    // Permite as movimentacoes para cima e para baixo:
     private void AllowVerticalMovement()
     {
-        float moveVertical = Input.GetAxis("Vertical");
+        float moveVertical = Input.GetAxis("Vertical") + joystick.Vertical;
 
         Vector2 position = this.transform.position;
         position.y += moveVertical * playerAttributes.Speed * Time.deltaTime * GlobalVariables.globalSpeed;
@@ -66,10 +82,11 @@ public class PlayerMovements : MonoBehaviour
     }
 
 
-    // Permite as movimenta���es para esquerda e para direita:
+    // Permite as movimentacoes para esquerda e para direita:
     private void AllowHorizontalMovement()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveHorizontal = Input.GetAxis("Horizontal") + joystick.Horizontal;
+        //moveHorizontal = NormalizeMoves(moveHorizontal);
 
         Vector2 position = this.transform.position;
         position.x += moveHorizontal * playerAttributes.Speed * Time.deltaTime * GlobalVariables.globalSpeed;

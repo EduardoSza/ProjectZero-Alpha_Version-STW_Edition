@@ -11,7 +11,7 @@ public class EnemyAttacks : MonoBehaviour
         Instantiate(prefab, transform);
     }
 
-    protected void TripleShot(GameObject prefab)
+    protected void oneSimpleShot(GameObject prefab)
     {
         Instantiate(prefab, transform.position, transform.rotation);
     }

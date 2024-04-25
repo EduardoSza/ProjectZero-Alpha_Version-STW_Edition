@@ -37,14 +37,6 @@ public class SuperShot_Control : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Toda vez que um game object com o script PlayerAttacks por detectado, attackPower irá
-        // absorver a força do personagem localizada em PlayerAttributes: 
-        PlayerAttacks playerAttacks = collision.GetComponent<PlayerAttacks>();
-        if (playerAttacks != null && playerAttacks.playerAttributes != null)
-        {
-            attackPower = playerAttacks.playerAttributes.AttackPower * 2;
-        }
-
         // Se a bala encontrar um game object com a tag Player, este game object se destruirá:
         if (collision.gameObject.CompareTag("Enemy"))
         {

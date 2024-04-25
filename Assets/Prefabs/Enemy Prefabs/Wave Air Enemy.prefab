@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1879721573086124037}
   - component: {fileID: 565167697006650709}
   - component: {fileID: 54576105386982208}
-  - component: {fileID: 484033938566143491}
+  - component: {fileID: 5068773785385012372}
   m_Layer: 0
   m_Name: Wave Air Enemy
   m_TagString: Enemy
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1359d011d2e9dec409e6cb5c8386f69b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1879721573086124037}
+  enemyAttributes: {fileID: 1879721573086124037}
   amplitude: 1
   frequency: 1
   inverseFlow: 0
@@ -69,8 +69,9 @@ MonoBehaviour:
   lifePoints: 3
   attackPower: 1
   speed: 3
+  scoreValue: 100
   anim: {fileID: 7229236576516990661}
-  enemyCollider: {fileID: 484033938566143491}
+  enemyCollider: {fileID: 5068773785385012372}
 --- !u!114 &565167697006650709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,6 +84,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89eb42e496dec664499a6bda861e28db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 3187065494835106987}
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
   enemyAttributes: {fileID: 1879721573086124037}
   enemyMovements: {fileID: 2994293766037112268}
 --- !u!50 &54576105386982208
@@ -112,8 +115,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!61 &484033938566143491
-BoxCollider2D:
+--- !u!60 &5068773785385012372
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -144,7 +147,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.053489685, y: -0.19264808}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -154,9 +157,25 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7328086, y: 0.725259}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.60948896, y: 0.06996627}
+      - {x: 0.56370074, y: 0.124139085}
+      - {x: 0.15873986, y: 0.35489213}
+      - {x: 0.13915813, y: 0.4252499}
+      - {x: 0.056295216, y: 0.51087344}
+      - {x: -0.09179938, y: 0.5685623}
+      - {x: -0.2423932, y: 0.5427392}
+      - {x: -0.3455062, y: 0.4428712}
+      - {x: -0.6252925, y: 0.30114388}
+      - {x: -0.54602313, y: 0.07680636}
+      - {x: -0.54634273, y: -0.020706479}
+      - {x: -0.39306378, y: -0.064150184}
+      - {x: -0.3592646, y: -0.46256706}
+      - {x: -0.25837117, y: -0.55139863}
+      - {x: -0.22730303, y: -0.28110993}
+      - {x: 0.6131961, y: -0.07529926}
+  m_UseDelaunayMesh: 0
 --- !u!1 &8691024568366466596
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,10 +247,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1886693017
-  m_SortingLayer: 3
+  m_SortingLayerID: -1195069569
+  m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a1fc1786c427341769dba6c83feadde4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e06f46fa9008204f87aea4c4c76af06, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -17,6 +17,8 @@ public class PlayerAnimationsControl : MonoBehaviour
     [SerializeField]
     private float barrelTime;
 
+    public bool isRolling = false;
+
     [SerializeField]
     private float parryTime;
 
@@ -32,6 +34,12 @@ public class PlayerAnimationsControl : MonoBehaviour
         }
     }
 
+    public void doBarrelRoll()
+    {
+        StartCoroutine(Parrying());
+        StartCoroutine(BarrelRoll());
+    }
+
     // O IEnumerator permite que ações acontecem apenas depois de um determinado período de tempo.
     // Neste caso, quando doBarrelRoll em anim for verdadeiro, o personagem fará a animação Barrel Roll
     // e ficará imune a danos inimigos até que WaitForSeconds acabe e doBarrelRoll se torne falso.
@@ -40,12 +48,14 @@ public class PlayerAnimationsControl : MonoBehaviour
     IEnumerator BarrelRoll()
     {
         anim.SetBool("doBarrelRoll", true);
+        isRolling = true;
 
         yield return new WaitForSeconds(barrelTime);
 
         anim.SetBool("doBarrelRoll", false);
 
         playerAttacks.firstSuperFlag = false;
+        isRolling = false;
     }
 
     IEnumerator Parrying()

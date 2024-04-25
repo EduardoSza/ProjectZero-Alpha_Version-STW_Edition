@@ -27,8 +27,8 @@ public class AlienAirshipAttacks : EnemyAttacks
         isAttacking = true;
         if (enemyMovements.StartFlag == true)
         {
+            oneSimpleShot(prefab);
             yield return new WaitForSeconds(timeBeforeAttack);
-            TripleShot(prefab);
         }
 
         isAttacking = false;

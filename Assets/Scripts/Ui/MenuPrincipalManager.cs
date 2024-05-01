@@ -17,7 +17,7 @@ public class MenuPrincipalManager : MonoBehaviour
     public void Sair(){
         Debug.Log("Sair do Jogo");
         Application.Quit();
-    }
+    } 
 
     public void Sair_Game_Over(){
         SceneManager.LoadScene(Menu);

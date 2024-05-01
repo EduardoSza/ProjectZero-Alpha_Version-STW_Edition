@@ -228,8 +228,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0, g: 0.5529412, b: 1, a: 1}
+    m_PressedColor: {r: 0, g: 0.5529412, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -418,7 +418,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1120,9 +1120,25 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- Programming -\n\nThiago Chaves\nCarlos Henrique\nEduardo Souza\n\xC1lvaro
-    Lima\n\n\n- Game Design -\n\nThiago Chaves\n\n\n- Original Arts - \n\nIsabelly
-    Reny (Artista 2D)\n\n\n- Third Party Arts -\n\nAnsimuz (Artista 2D)\n\n"
+  m_text: "[ Programming ]\r\n\r\nThiago Chaves (Unity Programer)\r\nCarlos Henrique
+    (Unity Programer)\r\nEduardo Souza (Unity Programer)\r\n\xC1lvaro Lima (Unity
+    Programer)\r\n\r\n\r\n[ Game Design ]\r\n\r\nThiago Chaves (Game Designer)\r\n\r\n\r\n[
+    Original Arts ] \r\n\r\nIsabelly Reny (2D Artist) \r\n\r\n\r\n[ Third Party Arts
+    ]\r\n\r\nWarped City, by Ansimuz\r\n(https://ansimuz.itch.io/warped-city)\r\n\r\nWarped
+    Vehicles, by Ansimuz\r\n(https://ansimuz.itch.io/warped-vehicles)\r\n\r\nFree
+    UI Kit 4#, by Wenxera\r\n(https://wenrexa.itch.io/ui-different02)\r\n\r\nFuturistic
+    Vector UI Elements, by likaytobello\r\n(https://ilkaytobello.itch.io/futuristic-ui-elements)\r\n\r\nFont+
+    [80's Retro Future], by SciGho - License: Attribution 4.0\r\n(https://ninjikin.itch.io/a-font-for-the-future-that-never-existed-80s-retro-future-font)\r\n\r\nPixel
+    Sidescroller Spaceships, by DyLESTorm\r\n(https://livingtheindie.itch.io/pixel-sidescroller-spaceships)\r\n\r\nAbuse
+    Art\r\n(https://opengameart.org/content/abuse-art)\r\n\r\n2D Asteroid Sprite,
+    by Nightzero - License: Attribution 3.0\r\n(https://opengameart.org/content/2d-asteroid-sprite)\r\n\r\n\r\n[
+    Third Party Music/SFX ]\r\n\r\nPlasma Storm - Interestellar Music Pack, by DavidKBD
+    - License: Attribution 4.0\r\n(https://davidkbd.itch.io/interstellar-edm-metal-music-pack)\r\n\r\nWarped
+    Shooting FX, by Ansimuz\r\n(https://ansimuz.itch.io/warped-shooting-fx)\r\n\r\nRetro
+    Hit Sound, by BrickDeveloper171\r\n(https://freesound.org/people/BrickDeveloper171/)\r\n\r\nDual
+    Neutron Disruptor, by Wildweasel - License: Attribution 4.0\r\n(https://freesound.org/people/wildweasel/sounds/39023/)\r\n\r\nWeapon
+    Laser 1, by DeltaCode \r\n(https://freesound.org/people/DeltaCode/sounds/667650/)\r\n\r\nVictory
+    2, by Pumodi \r\n(https://freesound.org/people/pumodi/sounds/150223/)\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7799c0c6cc0c21d4f934c8489e8626c3, type: 2}
   m_sharedMaterial: {fileID: -3038507012032481362, guid: 7799c0c6cc0c21d4f934c8489e8626c3, type: 2}

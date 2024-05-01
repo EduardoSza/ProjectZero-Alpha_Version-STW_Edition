@@ -7,15 +7,15 @@
   Project Zero é um videogame de gênero Shoot 'Em UP
 
 - Download Tutorial:
-  0) Baixe a Unity Engine e siga as intruções dadas.
-  1) Vá no seu Unity Hub e adicione a pasta deste projeto. Depois disso, abra-o (recomendamos que o abra apenas através do editor de versão 2022.3.14f1, na qual o jogo foi feito. É possível baixar esta versão
+  1) Baixe a Unity Engine e siga as intruções dadas.
+  2) Vá no seu Unity Hub e adicione a pasta deste projeto. Depois disso, abra-o (recomendamos que o abra apenas através do editor de versão 2022.3.14f1, na qual o jogo foi feito. É possível baixar esta versão
   no site da Unity).
-  2) Vá em \[Build Settings \] no projeto da Unity que você abriu (deve aparacer para você que build do jogo está configurada para android, antes de tudo). Aperte em \[Build\] e um apk será gerado no seu PC.
-  3) Baixe no seu celular.
+  3) Vá em \[Build Settings \] no projeto da Unity que você abriu (deve aparacer para você que build do jogo está configurada para android, antes de tudo). Aperte em \[Build\] e um apk será gerado no seu PC.
+  4) Baixe no seu celular.
   
 - Como Jogar / How to Play Tutorial:
-    a. Segure à esquerda da tela do jogo para se mover. / Hold on the left side of the screen to move.
-    b. Clique na direita da tela do jogo para atravessar objetos sólidos. / Click on the right of the screen to pass through solid objects (intangibility).
+  1) Segure à esquerda da tela do jogo para se mover. / Hold on the left side of the screen to move.
+  2) Clique na direita da tela do jogo para atravessar objetos sólidos. / Click on the right of the screen to pass through solid objects (intangibility).
 
 - Observações / Observations:
   O game que irá jogar é uma alfa: as mecânicas básicas foram desenvolvidas, mas não todas elas, e algumas coisas ainda estão em fase de avalição (esta versão um teste para o público e para a jogabilidade do jogo).

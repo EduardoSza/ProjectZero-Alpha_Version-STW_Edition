@@ -18,9 +18,12 @@
   2) Clique na direita da tela do jogo para atravessar objetos sólidos. / Click on the right of the screen to pass through solid objects (intangibility).
 
 - Observações / Observations:
+  
   O game que irá jogar é uma alfa: as mecânicas básicas foram desenvolvidas, mas não todas elas, e algumas coisas ainda estão em fase de avalição (esta versão um teste para o público e para a jogabilidade do jogo).
   Alguns scripts foram feitos de última hora e não estão tão organizados quanto os outros, com cometários e melhores práticas, devido ao nosso tempo. Mesmo assim, essa alfa é muito completa por si só.
+  
   /
+  
   The game you're gonna play is in alpha: the base mechanics were developed, but not all of them, and somethings are in evaluation phase yet (this version is a test for the public and this game's playability).
   Some scripts inside the project were made at the last minute and could not be so organized as others are, with comments and best practices, due the time we had. Even so, this alpha is very complete in its own.
   

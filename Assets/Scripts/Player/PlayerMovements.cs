@@ -6,10 +6,10 @@ using UnityEngine;
 public class PlayerMovements : MonoBehaviour
 {
     // Estas variaveis impedem que o player saia das bordas da câmera:
-    public float yMin = -4.6f;
-    public float yMax = 4.6f;
-    public float xMin = 5.5f;
-    public float xMax = 23f;
+    public float yMinBorder = -4.6f;
+    public float yMaxBorder = 4.6f;
+    public float xMinBorder = 5.5f;
+    public float xMaxBorder = 23f;
 
     // Esta variavel contem o script que controla os atributos principais e o sistema de vida/morte do player:
     [SerializeField]
@@ -81,7 +81,7 @@ public class PlayerMovements : MonoBehaviour
 
         Vector2 position = this.transform.position;
         position.y += moveVertical * playerAttributes.Speed * Time.deltaTime * GlobalVariables.globalSpeed;
-        position.y = Mathf.Clamp(position.y, yMin, yMax);
+        position.y = Mathf.Clamp(position.y, yMinBorder, yMaxBorder);
 
         this.transform.position = position;
 
@@ -96,7 +96,7 @@ public class PlayerMovements : MonoBehaviour
 
         Vector2 position = this.transform.position;
         position.x += moveHorizontal * playerAttributes.Speed * Time.deltaTime * GlobalVariables.globalSpeed;
-        position.x = Mathf.Clamp(position.x, xMin, xMax);
+        position.x = Mathf.Clamp(position.x, xMinBorder, xMaxBorder);
 
         this.transform.position = position;
        

@@ -1,0 +1,1032 @@
+fileFormatVersion: 2
+guid: cab60f80424b732479e94f9c61db7423
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: big-tako_Frame_0
+    originalName: 
+    pivot: {x: 0.49999997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 4
+      width: 46
+      height: 62
+    spriteID: 5ffab6f51357b35479f8cab5bf04acf1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 4}
+  - name: big-tako_Frame_1
+    originalName: 
+    pivot: {x: 0.35135138, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 156
+      width: 37
+      height: 64
+    spriteID: 8110467b9994e0e4981e2da6f5273af0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 156}
+  - name: big-tako_Frame_2
+    originalName: 
+    pivot: {x: 0.5283019, y: -0.01923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 58
+      y: 86
+      width: 53
+      height: 52
+    spriteID: 6d1f9ab295632d24596195f4c30886b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 58, y: 86}
+  - name: big-tako_Frame_3
+    originalName: 
+    pivot: {x: 0.53846157, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 440
+      y: 211
+      width: 65
+      height: 17
+    spriteID: fc21cd00bb4359b4aa0d9738bdf4dec9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 440, y: 211}
+  - name: big-tako_Frame_4
+    originalName: 
+    pivot: {x: 0.6326531, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 133
+      y: 156
+      width: 49
+      height: 41
+    spriteID: 6ade4731a74fe24458f2dfeeeec3c330
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 133, y: 156}
+  - name: big-tako_Frame_5
+    originalName: 
+    pivot: {x: 0.44117647, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 440
+      y: 156
+      width: 34
+      height: 47
+    spriteID: bb5c25b6e8bac2f40b921fa58da7db51
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 440, y: 156}
+  - name: big-tako_Frame_6
+    originalName: 
+    pivot: {x: 0.49999997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 414
+      y: 4
+      width: 46
+      height: 62
+    spriteID: 90406f197d7eae041a6c542c8fc48510
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 414, y: 4}
+  - name: big-tako_Frame_7
+    originalName: 
+    pivot: {x: 0.58974355, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 325
+      y: 86
+      width: 39
+      height: 60
+    spriteID: 1b7488b30e49cd04aa4dfb50f325fd58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 325, y: 86}
+  - name: big-tako_Frame_8
+    originalName: 
+    pivot: {x: 0.3888889, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 355
+      y: 156
+      width: 36
+      height: 47
+    spriteID: 409e757e6e8cf3e4b89cdd69b6c2ba24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 355, y: 156}
+  - name: big-tako_Frame_9
+    originalName: 
+    pivot: {x: 0.41666666, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 156
+      width: 36
+      height: 51
+    spriteID: 7bea56c4d3c56bb45a64f963034a5e32
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 232, y: 156}
+  - name: big-tako_Frame_10
+    originalName: 
+    pivot: {x: 0.4705882, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 156
+      width: 34
+      height: 60
+    spriteID: cbf047391ac736c4993a0a5e885bc0b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 156}
+  - name: big-tako_Frame_11
+    originalName: 
+    pivot: {x: 0.45714283, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 156
+      width: 35
+      height: 52
+    spriteID: a94cfcc983061594da094713e5bcec27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 156}
+  - name: big-tako_Frame_12
+    originalName: 
+    pivot: {x: 0.5454546, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 399
+      y: 156
+      width: 33
+      height: 50
+    spriteID: 0bb6027c3726cb94589ced55bf7fec7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 399, y: 156}
+  - name: big-tako_Frame_13
+    originalName: 
+    pivot: {x: 0.7457627, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 4
+      width: 59
+      height: 53
+    spriteID: 137060a114e3b6947b990ef172596ced
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 189, y: 4}
+  - name: big-tako_Frame_14
+    originalName: 
+    pivot: {x: 0.78181815, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 4
+      width: 55
+      height: 59
+    spriteID: 9fabbdc77bfd4d84ab353900203975bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 4}
+  - name: big-tako_Frame_15
+    originalName: 
+    pivot: {x: 0.7708333, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 4
+      width: 48
+      height: 60
+    spriteID: 8a061d6fbd405db42845eb470fe81f69
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 256, y: 4}
+  - name: big-tako_Frame_16
+    originalName: 
+    pivot: {x: 0.5588236, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 190
+      y: 156
+      width: 34
+      height: 57
+    spriteID: ad7cb25a6b51a0a4d9914ccc3c482898
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 190, y: 156}
+  - name: big-tako_Frame_17
+    originalName: 
+    pivot: {x: 0.39999998, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 4
+      width: 40
+      height: 72
+    spriteID: d68086eecfd16ff4792fe9ce39857310
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 4}
+  - name: big-tako_Frame_18
+    originalName: 
+    pivot: {x: 0.35555553, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 4
+      width: 45
+      height: 71
+    spriteID: 205663ac231d73a4ba7c0de0055f8186
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 4}
+  - name: big-tako_Frame_19
+    originalName: 
+    pivot: {x: 0.6557377, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 61
+      height: 74
+    spriteID: b7b71c6b4165db5488ed0e05258d9e57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: big-tako_Frame_20
+    originalName: 
+    pivot: {x: 0.6842105, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 372
+      y: 86
+      width: 57
+      height: 40
+    spriteID: c93a615450f223b408b63a253fcc7bab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 372, y: 86}
+  - name: big-tako_Frame_21
+    originalName: 
+    pivot: {x: 0.63829786, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 133
+      y: 205
+      width: 47
+      height: 37
+    spriteID: 68e21d71dcfb96f4aa9769016e0ea6a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 133, y: 205}
+  - name: big-tako_Frame_22
+    originalName: 
+    pivot: {x: 0.3928572, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 86
+      width: 28
+      height: 61
+    spriteID: 5db4bee5e033b3c40837275377c61ed6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 480, y: 86}
+  - name: big-tako_Frame_23
+    originalName: 
+    pivot: {x: 0.45000002, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 468
+      y: 4
+      width: 40
+      height: 62
+    spriteID: b31170d78dc56724db1e6dcf1e04c404
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 468, y: 4}
+  - name: big-tako_Frame_24
+    originalName: 
+    pivot: {x: 0.47727272, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 86
+      width: 44
+      height: 61
+    spriteID: 09e1378bd87d95f4d9298b7b6d860372
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 86}
+  - name: big-tako_Frame_25
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 437
+      y: 86
+      width: 35
+      height: 62
+    spriteID: 38fc9a1ed6bf2614282fb90a7da98b4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 437, y: 86}
+  - name: big-tako_Frame_26
+    originalName: 
+    pivot: {x: 0.46428573, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 319
+      y: 156
+      width: 28
+      height: 61
+    spriteID: 11f9c926fb2037c408a46a717c8a619e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 319, y: 156}
+  - name: big-tako_Frame_27
+    originalName: 
+    pivot: {x: 0.4705882, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 156
+      width: 34
+      height: 60
+    spriteID: b580744b85d46f948b2518ec1eb5fc87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 156}
+  - name: big-tako_Frame_28
+    originalName: 
+    pivot: {x: 0.49999997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 86
+      width: 46
+      height: 62
+    spriteID: 8c89f64c25ee94a4faab0d7e50934e33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 86}
+  - name: big-tako_Frame_29
+    originalName: 
+    pivot: {x: 0.49999997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 86
+      width: 44
+      height: 61
+    spriteID: cb8cb69f8819ee14188b8e26be011f22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 171, y: 86}
+  - name: big-tako_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 86
+      width: 42
+      height: 60
+    spriteID: aafba4a2684599a488a698edffc84df2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 86}
+  - name: big-tako_Frame_31
+    originalName: 
+    pivot: {x: 0.49999997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 223
+      y: 86
+      width: 44
+      height: 61
+    spriteID: 2c9b69b60d4085a4293c1fa79f0fa11c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 223, y: 86}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1123820098
+    name: big-tako
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: big-tako_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 33
+        y: 0
+        width: 46
+        height: 62
+      spriteId: 5ffab6f51357b35479f8cab5bf04acf1
+    - name: big-tako_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 43
+        y: 0
+        width: 37
+        height: 64
+      spriteId: 8110467b9994e0e4981e2da6f5273af0
+    - name: big-tako_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 28
+        y: 1
+        width: 53
+        height: 52
+      spriteId: 6d1f9ab295632d24596195f4c30886b2
+    - name: big-tako_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 21
+        y: 0
+        width: 65
+        height: 17
+      spriteId: fc21cd00bb4359b4aa0d9738bdf4dec9
+    - name: big-tako_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 25
+        y: 0
+        width: 49
+        height: 41
+      spriteId: 6ade4731a74fe24458f2dfeeeec3c330
+    - name: big-tako_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 41
+        y: 0
+        width: 34
+        height: 47
+      spriteId: bb5c25b6e8bac2f40b921fa58da7db51
+    - name: big-tako_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 33
+        y: 0
+        width: 46
+        height: 62
+      spriteId: 90406f197d7eae041a6c542c8fc48510
+    - name: big-tako_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 33
+        y: 0
+        width: 39
+        height: 60
+      spriteId: 1b7488b30e49cd04aa4dfb50f325fd58
+    - name: big-tako_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 42
+        y: 0
+        width: 36
+        height: 47
+      spriteId: 409e757e6e8cf3e4b89cdd69b6c2ba24
+    - name: big-tako_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 41
+        y: 0
+        width: 36
+        height: 51
+      spriteId: 7bea56c4d3c56bb45a64f963034a5e32
+    - name: big-tako_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 40
+        y: 0
+        width: 34
+        height: 60
+      spriteId: cbf047391ac736c4993a0a5e885bc0b7
+    - name: big-tako_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 40
+        y: 0
+        width: 35
+        height: 52
+      spriteId: a94cfcc983061594da094713e5bcec27
+    - name: big-tako_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 38
+        y: 0
+        width: 33
+        height: 50
+      spriteId: 0bb6027c3726cb94589ced55bf7fec7c
+    - name: big-tako_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 12
+        y: 0
+        width: 59
+        height: 53
+      spriteId: 137060a114e3b6947b990ef172596ced
+    - name: big-tako_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 13
+        y: 0
+        width: 55
+        height: 59
+      spriteId: 9fabbdc77bfd4d84ab353900203975bc
+    - name: big-tako_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 19
+        y: 0
+        width: 48
+        height: 60
+      spriteId: 8a061d6fbd405db42845eb470fe81f69
+    - name: big-tako_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 37
+        y: 0
+        width: 34
+        height: 57
+      spriteId: ad7cb25a6b51a0a4d9914ccc3c482898
+    - name: big-tako_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 40
+        y: 0
+        width: 40
+        height: 72
+      spriteId: d68086eecfd16ff4792fe9ce39857310
+    - name: big-tako_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 40
+        y: 0
+        width: 45
+        height: 71
+      spriteId: 205663ac231d73a4ba7c0de0055f8186
+    - name: big-tako_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 16
+        y: 0
+        width: 61
+        height: 74
+      spriteId: b7b71c6b4165db5488ed0e05258d9e57
+    - name: big-tako_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 17
+        y: 0
+        width: 57
+        height: 40
+      spriteId: c93a615450f223b408b63a253fcc7bab
+    - name: big-tako_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 26
+        y: 0
+        width: 47
+        height: 37
+      spriteId: 68e21d71dcfb96f4aa9769016e0ea6a5
+    - name: big-tako_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 45
+        y: 0
+        width: 28
+        height: 61
+      spriteId: 5db4bee5e033b3c40837275377c61ed6
+    - name: big-tako_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 38
+        y: 0
+        width: 40
+        height: 62
+      spriteId: b31170d78dc56724db1e6dcf1e04c404
+    - name: big-tako_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 35
+        y: 0
+        width: 44
+        height: 61
+      spriteId: 09e1378bd87d95f4d9298b7b6d860372
+    - name: big-tako_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 41
+        y: 0
+        width: 35
+        height: 62
+      spriteId: 38fc9a1ed6bf2614282fb90a7da98b4a
+    - name: big-tako_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 43
+        y: 0
+        width: 28
+        height: 61
+      spriteId: 11f9c926fb2037c408a46a717c8a619e
+    - name: big-tako_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 40
+        y: 0
+        width: 34
+        height: 60
+      spriteId: b580744b85d46f948b2518ec1eb5fc87
+    - name: big-tako_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 33
+        y: 0
+        width: 46
+        height: 62
+      spriteId: 8c89f64c25ee94a4faab0d7e50934e33
+    - name: big-tako_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 34
+        y: 0
+        width: 44
+        height: 61
+      spriteId: cb8cb69f8819ee14188b8e26be011f22
+    - name: big-tako_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 35
+        y: 0
+        width: 42
+        height: 60
+      spriteId: aafba4a2684599a488a698edffc84df2
+    - name: big-tako_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 34
+        y: 0
+        width: 44
+        height: 61
+      spriteId: 2c9b69b60d4085a4293c1fa79f0fa11c
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 112, y: 80}

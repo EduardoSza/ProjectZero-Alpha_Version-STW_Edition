@@ -11,9 +11,13 @@ public class EnemyParentControl : MonoBehaviour
     [SerializeField]
     private float timeOfDeath;
 
+    public int childCounter = 0;
+
     // Update is called once per frame
     void Update()
     {
+        childCounter = transform.childCount;
+
         // Se este gameObject não possuir gameObjects filho, será destruído:
         if (transform.childCount == 0)
         {

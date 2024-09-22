@@ -27,6 +27,9 @@ public class PlayerAttributes : MonoBehaviour
     // Usado quando o player morre:
     [SerializeField]
     private AudioSource deathExplosionSound;
+       
+    // Detecta se o jogador está sem vida:
+    private bool isDeadFlag = false;
 
     void Start()
     {
@@ -77,8 +80,9 @@ public class PlayerAttributes : MonoBehaviour
     // Faz com que o personagem tenha a capacidade de morrer:
     private void ItMayDie()
     {
-        if (lifePoints <= 0) // Se a vida do personagem for menor ou igual a zero, o personagem morre.
+        if (lifePoints <= 0 && isDeadFlag == false) // Se a vida do personagem for menor ou igual a zero, o personagem morre.
         {
+            isDeadFlag = true;
             StartCoroutine(Death());
         }
     }
@@ -90,8 +94,8 @@ public class PlayerAttributes : MonoBehaviour
     {
         boxCollider.enabled = false;
         anim.SetBool("isDead", true);
-        //deathExplosionSound.Play();
-        yield return new WaitForSeconds(1f);
+        deathExplosionSound.Play();
+        yield return new WaitForSeconds(0.9f);
         Destroy(this.gameObject);
         GameController.instance.ShowGameOver();
     }

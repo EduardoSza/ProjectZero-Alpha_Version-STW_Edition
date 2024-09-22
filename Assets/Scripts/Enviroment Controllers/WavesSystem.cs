@@ -14,9 +14,8 @@ public class WavesSystem : MonoBehaviour
     public GameObject victoryPanel;
     public AudioSource backgroundMusic;
     public AudioSource victoryMusic;
+    public AudioSource victoryYell;
     public bool victoryFlag = false;
-    public bool victoryMusicFlag = false;
-
 
     public GameObject[] wavesList;
     public List<GameObject> currentWave = new List<GameObject>();
@@ -55,25 +54,26 @@ public class WavesSystem : MonoBehaviour
         {
             StartCoroutine(VictoryProcess());
         }
-
-        if (victoryFlag == true && victoryMusicFlag == false)
-        {
-            victoryMusicFlag = true;
-            victoryMusic.Play(); 
-            victoryPanel.SetActive(true);
-        }
     }
 
     IEnumerator VictoryProcess()
     {
-        gameHUD.SetActive(false);
-        bulletBarrier.SetActive(false);
+        if (victoryFlag == false)
+        {
+            victoryFlag = true;
 
-        backgroundMusic.Pause();   
+            gameHUD.SetActive(false);
+            bulletBarrier.SetActive(false);
 
-        playerMovements.StartFlag = false;
-        yield return new WaitForSeconds(4);
-        playerAttributes.Speed = 0;
-        victoryFlag = true;
+            backgroundMusic.Pause();
+            victoryMusic.Play();
+
+            playerMovements.StartFlag = false;
+            yield return new WaitForSeconds(4);
+            playerAttributes.Speed = 0;
+
+            victoryPanel.SetActive(true);
+            victoryYell.Play();
+        }
     }
 }

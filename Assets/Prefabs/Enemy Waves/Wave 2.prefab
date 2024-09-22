@@ -134,7 +134,7 @@ Transform:
   m_GameObject: {fileID: 1222764012569831856}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.17000008, y: 66.3, z: -11.211486}
+  m_LocalPosition: {x: 0.17000008, y: 66.55, z: -11.211486}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -158,6 +158,7 @@ MonoBehaviour:
   thisIsAWave: 1
   destroyByTime: 0
   timeOfDeath: 0
+  childCounter: 0
 --- !u!1 &1264765572070049083
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,6 +320,7 @@ MonoBehaviour:
   thisIsAWave: 0
   destroyByTime: 0
   timeOfDeath: 0
+  childCounter: 0
 --- !u!1 &4030865416314637832
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +371,7 @@ MonoBehaviour:
   thisIsAWave: 0
   destroyByTime: 0
   timeOfDeath: 0
+  childCounter: 0
 --- !u!1 &5395315303287579100
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +582,7 @@ MonoBehaviour:
   thisIsAWave: 0
   destroyByTime: 1
   timeOfDeath: 65
+  childCounter: 0
 --- !u!1 &7182340203703528369
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,6 +20,11 @@ public class EnemyAttributes : MonoBehaviour
     // O colider é responsável por permitir que o player encoste e sinta as coisas ao seu redor:
     [SerializeField]
     private Collider2D enemyCollider;
+    // Usado quando o inimigo morre:
+    [SerializeField]
+    private AudioSource deathExplosionSound;
+    // Detecta se o inimigo está sem vida:
+    private bool isDeadFlag = false;
 
     void Update()
     {
@@ -71,15 +76,18 @@ public class EnemyAttributes : MonoBehaviour
     // Faz com que o personagem tenha a capacidade de morrer:
     private void ItMayDie()
     {
-        if (lifePoints <= 0) // Se a vida do personagem for menor ou igual a zero, o personagem morre.
+        if (lifePoints <= 0 && isDeadFlag == false) // Se a vida do personagem for menor ou igual a zero, o personagem morre.
         {
+            isDeadFlag = true;
+
             if (enemyCollider.enabled == true)
             {
                 GlobalVariables.gameScore += scoreValue;
             }
             enemyCollider.enabled = false;
             anim.SetBool("isDead", true);
-            Destroy(gameObject, 0.5f);
+            deathExplosionSound.Play();
+            Destroy(gameObject, 0.8f);
         }
     }
 }

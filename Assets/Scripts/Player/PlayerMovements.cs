@@ -14,6 +14,8 @@ public class PlayerMovements : MonoBehaviour
     // Esta variavel contem o script que controla os atributos principais e o sistema de vida/morte do player:
     [SerializeField]
     private PlayerAttributes playerAttributes;
+    [SerializeField]
+    private WavesSystem wavesSystem;
 
     [SerializeField]
     private Rigidbody2D rig;
@@ -49,6 +51,9 @@ public class PlayerMovements : MonoBehaviour
         }
         else
         {
+            // If StartFlag is on, the first wave may start:
+            wavesSystem.enabled = true;
+
             if (Input.touchCount > 0)
             {
                 Touch touch = Input.GetTouch(0);
@@ -77,7 +82,7 @@ public class PlayerMovements : MonoBehaviour
     // Permite as movimentacoes para cima e para baixo:
     private void AllowVerticalMovement()
     {
-        float moveVertical = Input.GetAxis("Vertical");
+        float moveVertical = Input.GetAxisRaw("Vertical");
 
         Vector2 position = this.transform.position;
         position.y += moveVertical * playerAttributes.Speed * Time.deltaTime * GlobalVariables.globalSpeed;
@@ -91,7 +96,7 @@ public class PlayerMovements : MonoBehaviour
     // Permite as movimentacoes para esquerda e para direita:
     private void AllowHorizontalMovement()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveHorizontal = Input.GetAxisRaw("Horizontal");
         //moveHorizontal = NormalizeMoves(moveHorizontal);
 
         Vector2 position = this.transform.position;

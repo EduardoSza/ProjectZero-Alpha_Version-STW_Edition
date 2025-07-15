@@ -26,4 +26,6 @@
   
   The game you're gonna play is in alpha: the base mechanics were developed, but not all of them, and somethings are in evaluation phase yet (this version is a test for the public and this game's playability).
   Some scripts inside the project were made at the last minute and could not be so organized as others are, with comments and best practices, due the time we had. Even so, this alpha is very complete in its own.
+
+Versão Web - https://zoroa64.itch.io/project-zero-between-new-dimensions
   
